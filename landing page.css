@@ -74,18 +74,25 @@ body {
   .about {
     background: #000000;
   }
-  .image{
-    
-    display:inline-block;
-    position: absolute;
   
+  .gad{
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    vertical-align: middle;
   }
 
-  .gad{
-    width: 40%;
-    height: auto;
-    border-radius: 8px;
+  .wrapper{
+    padding: 0 15px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap:5rem;
+  }
 
+  .text{
+    flex: 1;
   }
 
   .services {
