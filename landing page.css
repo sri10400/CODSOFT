@@ -76,10 +76,14 @@ body {
   }
   
   .gad{
-    width: 100%;
-    max-width: 400px;
+    width: 500px;
+    height: 300px;
+    /*max-width: 400px;*/
     object-fit: cover;
     vertical-align: middle;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #7d2736;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .wrapper{
@@ -89,6 +93,11 @@ body {
     align-items: center;
     justify-content: space-around;
     gap:5rem;
+  }
+
+  .gad:hover {
+    transform: translateX(-5px) scale(1.0); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.164) 0 0 15px rgba(150, 20, 85, 0.515); 
   }
 
   .text{
